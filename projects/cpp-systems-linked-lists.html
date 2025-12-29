@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>C++ Systems Project | Hassaan Nasim</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <div class="nav">
+    <div class="brand">Hassaan Nasim</div>
+    <div class="navlinks">
+      <a href="../index.html">Home</a>
+      <a href="../projects.html">Projects</a>
+    </div>
+  </div>
+
+  <div class="project-hero">
+    <h1>C++ Systems Project with Data Structures and Algorithms Using Linked Lists</h1>
+    <p>
+      Interplanetary Alliance Recruitment System
+    </p>
+
+    <div class="badges">
+      <div class="badge">C++</div>
+      <div class="badge">Data Structures</div>
+      <div class="badge">Linked Lists</div>
+      <div class="badge">OOP</div>
+      <div class="badge">Unit Testing</div>
+    </div>
+  </div>
+
+  <div class="section-title">Overview</div>
+  <p>
+    This project implements a modular recruitment evaluation system written in C++.
+    The system ingests structured input data for human and alien recruits, validates and
+    corrects malformed entries, and stores records using custom singly linked lists.
+    It provides efficient search, deletion, and merge operations without relying on
+    standard library containers or sorting utilities.
+  </p>
+
+  <div class="section-title">Design and Implementation</div>
+  <ul>
+    <li>Abstract base class CrewMember defining shared attributes and comparisons</li>
+    <li>Human and Alien classes derived using inheritance</li>
+    <li>TelepathicLinkTest composed within Alien recruits for qualification logic</li>
+    <li>RecruitmentSystem class coordinating parsing, validation, and menu logic</li>
+    <li>Clear separation of headers and source files across the codebase</li>
+  </ul>
+
+  <div class="section-title">Data Structures and Algorithms</div>
+  <ul>
+    <li>Custom singly linked lists with explicit head and tail pointers</li>
+    <li>Sorted insertion performed in O(n) time at insertion</li>
+    <li>Search by ID, training score, mission aptitude, and full name</li>
+    <li>Deletion by name including head and tail edge cases</li>
+    <li>Merge operation combining human and alien lists with deterministic ordering</li>
+  </ul>
+
+  <div class="section-title">Error Handling and Validation</div>
+  <ul>
+    <li>Detection of missing or malformed input fields</li>
+    <li>Case insensitive string comparisons throughout the system</li>
+    <li>Automatic correction of known data entry errors with warnings</li>
+    <li>Graceful handling of invalid menu selections</li>
+    <li>Exception handling during memory allocation and input failures</li>
+  </ul>
+
+  <div class="section-title">Unit Testing</div>
+  <ul>
+    <li>Verification of sorted insertion behavior</li>
+    <li>Search correctness across all supported fields</li>
+    <li>Deletion correctness including boundary cases</li>
+    <li>Merge operation correctness and stability</li>
+    <li>Qualification filtering based on TelepathicLinkTest thresholds</li>
+  </ul>
+
+  <div class="section-title">Algorithmic Complexity</div>
+  <ul>
+    <li>Insertion: O(n)</li>
+    <li>Search: O(n)</li>
+    <li>Deletion: O(n)</li>
+    <li>Merge: O(n)</li>
+  </ul>
+
+  <div class="section-title">Tech Stack</div>
+  <ul>
+    <li>Language: C++</li>
+    <li>Paradigm: Object Oriented Programming</li>
+    <li>Data Structures: Custom singly linked lists</li>
+    <li>Testing: Manual unit testing framework</li>
+  </ul>
+
+  <div class="footer">
+    <a href="../projects.html">Back to Projects</a>
+  </div>
+
+</div>
+
+</body>
+</html>

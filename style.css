@@ -1,0 +1,159 @@
+:root{
+  --bg:#0b0f17;
+  --card:#111827;
+  --text:#e5e7eb;
+  --muted:#9ca3af;
+  --accent:#60a5fa;
+  --border:rgba(255,255,255,0.08);
+}
+
+*{
+  box-sizing:border-box;
+}
+
+body{
+  margin:0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height:1.6;
+}
+
+a{
+  color: var(--accent);
+  text-decoration:none;
+}
+
+a:hover{
+  text-decoration:underline;
+}
+
+.container{
+  max-width:1000px;
+  margin:0 auto;
+  padding:24px;
+}
+
+.nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:14px 0;
+}
+
+.brand{
+  font-weight:700;
+  font-size:18px;
+}
+
+.navlinks a{
+  margin-left:16px;
+  color:var(--text);
+}
+
+.hero h1{
+  font-size:36px;
+  margin-bottom:8px;
+}
+
+.hero p{
+  color:var(--muted);
+  max-width:70ch;
+}
+
+.badges{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin-top:14px;
+}
+
+.badge{
+  padding:6px 12px;
+  border-radius:999px;
+  background:rgba(255,255,255,0.05);
+  border:1px solid var(--border);
+  color:var(--muted);
+  font-size:14px;
+}
+
+.section-title{
+  margin:28px 0 14px 0;
+  font-size:20px;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:16px;
+}
+
+.card{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:16px;
+  overflow:hidden;
+  color:var(--text);
+}
+
+.thumb{
+  width:100%;
+  height:200px;
+  object-fit:cover;
+}
+
+.card-body{
+  padding:14px;
+}
+
+.card h3{
+  margin:0 0 6px 0;
+}
+
+.card p{
+  margin:0 0 10px 0;
+  color:var(--muted);
+}
+
+.meta{
+  font-size:13px;
+  color:var(--muted);
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+}
+
+.footer{
+  margin-top:40px;
+  padding-top:16px;
+  border-top:1px solid var(--border);
+  color:var(--muted);
+  font-size:14px;
+}
+
+.project-hero{
+  padding:20px;
+  border-radius:16px;
+  border:1px solid var(--border);
+  background:rgba(255,255,255,0.04);
+}
+
+.media{
+  display:grid;
+  gap:14px;
+  margin:18px 0;
+}
+
+.media img,
+.media video,
+.media iframe{
+  width:100%;
+  border-radius:14px;
+  border:1px solid var(--border);
+}
+
+@media(max-width:800px){
+  .grid{
+    grid-template-columns:1fr;
+  }
+}
